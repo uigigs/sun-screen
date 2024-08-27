@@ -61,6 +61,9 @@ ul{
     animation: rotate360 15s infinite linear;
     max-width: 87vw;
 }
+.bottle img{
+    transform: translateX(-25%);
+}
 
 @keyframes rotate360 {
     0% {
@@ -251,4 +254,8 @@ ul{
     .title{
         margin-bottom: 30px;
     }
+    .bottle img{
+        transform: translateX(0);
+    }
+    
 }
