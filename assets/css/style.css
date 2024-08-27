@@ -8,6 +8,9 @@
 body{
     background-color: #26C5FF;
     font-family: Sora;
+}
+.body-container{
+    overflow: hidden;
     padding: 5vh 0;
 }
 .text-center{
@@ -18,11 +21,55 @@ ul{
     margin: 0;
     list-style: none;
 }
+.img-fluid{
+    max-width: 100%;
+}
 .container{
     max-width: 1210px;
     margin: auto;
     padding: 0px 20px;
 }
+.sunscreen-content{
+    position: relative;
+    z-index: 1;
+}
+.sun{
+    height: 279px;
+    width: 279px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.sun-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.sun-img{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.sunlight{
+    position: absolute;
+    z-index: 0;
+    animation: rotate360 15s infinite linear;
+    max-width: 87vw;
+}
+
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .title{
     border-radius: 50px;
     background: #FFB403;
@@ -33,19 +80,22 @@ ul{
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 15%;
-    padding: 45px 36px;
-    max-width: min-content;
+    padding: 35px 36px;
     text-align: center;
     margin: auto;
     max-width: 550px;
     width: 100%;
-    margin-bottom: 10vh;
+    margin-bottom: 12%;
+    position: relative;
+    z-index: 1;
 }
 .sunscreen-row{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px -12px;
+    position: relative;
+    z-index: 1;
 }
 .sunscreen-column{
     padding: 0px 12px;
@@ -74,7 +124,6 @@ ul{
 .sunscreen-button-list li a:hover{
     box-shadow: none;
 }
-
 .comming-soon-btn{
     display: flex;
     align-items: center;
@@ -91,5 +140,90 @@ ul{
     box-shadow: 0px 5px 0px 0px #CD930B;
     text-decoration: none;
     margin: auto;
-    margin-top: 6%;
+    margin-top: 8%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*--- responsive style ---*/
+@media screen and (max-width: 1200px) {
+    .title {
+        border-radius: 30px;
+        font-size: 50px;
+        padding: 20px 20px;
+        max-width: 430px;
+        margin-bottom: 6%;
+    }
+    .sun{
+        height: 200px;
+        width: 200px;
+    }
+    .sunscreen-button-list{
+        transform: translateY(20px);
+    }
+    .sunscreen-button-list li a {
+        border-radius: 30px;
+        width: 226px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .sunscreen-button-list li a img {
+        max-width: 24px;
+    }
+    .comming-soon-btn{
+        border-radius: 30px;
+        width: 300px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title{
+        font-size: 32px;
+        margin-bottom: 20%;
+        max-width: 300px;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 28px;
+        max-width: 240px;
+        border-radius: 25px;
+    }
+    .sunscreen-button-list li a{
+        font-size: 18px;
+        width: 175px;
+        height: 50px;
+    }
+    .sunscreen-button-list li a img{
+        max-width: 18px;
+    }
+    .sun {
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .sun{
+        position: relative;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .sunscreen-row{
+        flex-wrap: wrap;
+    }
+    .sunscreen-column{
+        width: 70% !important;
+        margin: auto;
+        text-align: center;
+    }
+    .sunscreen-button-list li a{
+        margin: auto;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
 }
