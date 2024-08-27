@@ -100,6 +100,13 @@ ul{
 .sunscreen-column{
     padding: 0px 12px;
 }
+.w-35{
+    width: 35%;
+}
+.w-30{
+    width: 30%;
+}
+
 .sunscreen-button-list li{
     margin-bottom: 20px;
 }
@@ -140,13 +147,22 @@ ul{
     box-shadow: 0px 5px 0px 0px #CD930B;
     text-decoration: none;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 15px;
     position: relative;
     z-index: 1;
 }
 
 
 /*--- responsive style ---*/
+@media screen and (max-width: 1600px) {
+    .title{
+        margin-bottom: 7%;
+    }
+    .sun{
+        height: 230px;
+        width: 230px;
+    }
+}
 @media screen and (max-width: 1200px) {
     .title {
         border-radius: 30px;
@@ -176,6 +192,7 @@ ul{
         width: 300px;
         height: 60px;
         font-size: 24px;
+        margin-top: 8%;
     }
 }
 
@@ -216,9 +233,17 @@ ul{
         flex-wrap: wrap;
     }
     .sunscreen-column{
-        width: 70% !important;
         margin: auto;
         text-align: center;
+    }
+    .sm-w-65{
+        width: 65%;
+    }
+    .sm-w-35{
+        width: 35%;
+    }
+    .sm-w-75{
+        width: 75%;
     }
     .sunscreen-button-list li a{
         margin: auto;
