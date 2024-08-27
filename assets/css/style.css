@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    background-color: #26C5FF;
+    font-family: Sora;
+    padding: 5vh 0;
+}
+.text-center{
+    text-align: center;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container{
+    max-width: 1210px;
+    margin: auto;
+    padding: 0px 20px;
+}
+.title{
+    border-radius: 50px;
+    background: #FFB403;
+    color: #FFF;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 15%;
+    padding: 45px 36px;
+    max-width: min-content;
+    text-align: center;
+    margin: auto;
+    max-width: 550px;
+    width: 100%;
+    margin-bottom: 10vh;
+}
+.sunscreen-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px -12px;
+}
+.sunscreen-column{
+    padding: 0px 12px;
+}
+.sunscreen-button-list li{
+    margin-bottom: 20px;
+}
+.sunscreen-button-list li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: #FFB403;
+    box-shadow: 0px 5px 0px 0px #CD930B;
+    width: 280px;
+    height: 80px;
+    gap: 18px;
+    text-decoration: none;
+    color: #000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.3s;
+}
+.sunscreen-button-list li a:hover{
+    box-shadow: none;
+}
+
+.comming-soon-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 454px;
+    height: 80px;
+    border-radius: 40px;
+    background: #FFB403;
+    box-shadow: 0px 5px 0px 0px #CD930B;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 6%;
+}
